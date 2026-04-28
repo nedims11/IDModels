@@ -11,6 +11,53 @@
   <title>Instructional Design Models</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+    <style>
+    .repo-bar {
+      background: #0d1117;
+      color: #f0f6fc;
+      font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 14px;
+      padding: 10px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid #30363d;
+    }
+    .repo-bar .repo-bar-label {
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .repo-bar a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 4px 10px;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .repo-bar a:hover {
+      background: #161b22;
+      border-color: #58a6ff;
+    }
+    .repo-bar .repo-bar-divider {
+      flex: 1;
+    }
+    .repo-bar .repo-bar-raw {
+      color: #8b949e;
+      font-size: 13px;
+    }
+    .repo-bar .repo-bar-raw a {
+      padding: 2px 6px;
+      margin-left: 4px;
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      .repo-bar { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .repo-bar .repo-bar-divider { display: none; }
+    }
+  </style>
 </head>
 <body>
   <div class="repo-bar">
